@@ -26,11 +26,11 @@ let a:Float = 1
 let b:Float = 2
 let c:Float = -3
 
-var x1:Float
-var x2:Float
-var d:Float
+var x1: Float
+var x2: Float
+var d: Float
 
-var discriminant:Float
+var discriminant: Float
 d = pow(b,2) - 4 * a * c
 if (d >= 0) {
     discriminant = sqrt(d)
@@ -45,10 +45,10 @@ print("\n")
 
 // 2. Даны катеты прямоугольного треугольника. Найти площадь, периметр и гипотенузу треугольника.
 
-var v:Double = 6
-var n:Double = 8
+var v: Double = 6
+var n: Double = 8
 
-var p:Double = v + n + m
+var p: Double = v + n + m
 var m = sqrt(pow(v,2) + pow(n,2))
 var s = v*n/2
 
@@ -59,8 +59,8 @@ print("Гипотенуза треугольника равна \(m)\n")
 
 // 3. Пользователь вводит сумму вклада в банк и годовой процент. Найти сумму вклада через 5 лет.
 
-var deposit:Float = 1500000
-var percent:Float = 15
+var deposit: Float = 1500000
+var percent: Float = 15
 
 percent = percent / 100
 var result1 = deposit + (deposit * percent)
