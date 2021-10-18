@@ -7,7 +7,20 @@
 
 import Foundation
 
-print("Hello, World!")
+
+// 1. Решить квадратное уравнение
+print("Ну что, лодырь, решим квадратное уравнение? Вводи значение для а:")
+var input = readLine()
+
+let isNumber = CharacterSet.decimalDigits.isSuperset(of: CharacterSet(charactersIn: input!))
+if (isNumber) {
+    print("Красава! Ты написал \(input ?? "") \n")
+} else {
+    print("Лошара! Число вводи!!!\n")
+    input = readLine()
+}
+
+
 
 let a:Float = 1
 let b:Float = 2
@@ -18,14 +31,14 @@ var x2:Float
 var d:Float
 
 var discriminant:Float
-d = pow(b,2) - (4 * a * c)
+d = pow(b,2) - 4 * a * c
 if (d >= 0) {
     discriminant = sqrt(d)
-    x1 = (-b + discriminant) / (2 * a)
-    x2 = (-b - (discriminant)) / (2 * a)
+    x1 = (-b + discriminant) / 2 * a
+    x2 = (-b - discriminant) / 2 * a
     print(x1, x2)
 } else if(d < 0){
-    d = ((4 * a * c) - pow(b,2)) / (2 * a)
+    d = ((4 * a * c) - pow(b,2)) / 2 * a
     print(d)
 }
 print("\n")
