@@ -22,9 +22,9 @@ if (isNumber) {
 
 
 
-let a:Float = 1
-let b:Float = 2
-let c:Float = -3
+let a: Float = 1
+let b: Float = 2
+let c: Float = -3
 
 var x1: Float
 var x2: Float
